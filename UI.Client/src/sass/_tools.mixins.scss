@@ -1,0 +1,27 @@
+﻿/// <reference path="_settings.global.scss" />
+/// <reference path="_tools.base.scss" />
+/*!
+ *  Mixins
+ */
+
+/// Give a border state to executing container.
+/// @access public
+/// @param {Base} $conf - Settings in format (border-size, border-active-color, border-active-bg-color, border-hover-color, border-hover-bg-color)
+/// using default values from global settings.
+/// @return {String} - bordered state css rules.
+@mixin borderedState($conf: ()) {
+    // Extending the default arguments with the given object
+    $default-conf: (
+        border-size: $border-base-size,
+        border-hover-color: $border-base-hover-color,
+        border-hover-bg-color: $border-base-hover-bg-color);
+    $conf: extend($default-conf, $conf);
+
+    // Dumping CSS
+    border: map-get($conf, border-size) solid transparent;
+
+    &:hover {
+        border: map-get($conf, border-size) dashed map-get($conf, border-hover-color);
+        background-color: map-get($conf, border-hover-bg-color);
+    }
+}

@@ -1,0 +1,95 @@
+﻿/// <reference path="_settings.widget-search.scss" />
+/*!
+ *  Widget search object
+ */
+
+.widget.widget-search,
+.widget .widget-search {
+    position: relative;
+    margin: 0;
+	width: 0%;
+	min-width: $widget-search-size;
+	height: $widget-search-size;
+	float: right;
+	overflow: hidden;
+	transition: width 0.3s;
+	backface-visibility: hidden;
+
+    /* The input element on the search element  */
+    .search-input {
+	    position: absolute;
+	    top: 0;
+	    right: 0;
+	    width: 100%;
+	    height: $widget-search-size;
+	    margin: 0;
+	    z-index: 10;
+	    padding: 20px 65px 20px 20px;
+	    font-family: inherit;
+	    font-size: 20px;
+    }
+
+    /* remove special webkit formatting on the search input */
+    input[type="search"].search-input {
+	    -webkit-appearance: none;
+	    -webkit-border-radius: 0px;
+    }
+
+    /* format the search button and submit to share the same size and space */
+    .search-icon,
+    .search-submit  {
+	    width: $widget-search-size;
+	    height: $widget-search-size;
+	    display: block;
+	    position: absolute;
+	    right: 0;
+	    top: 0;
+	    padding: 0;
+	    margin: 0;
+	    line-height: $widget-search-size;
+	    text-align: center;
+	    cursor: pointer;
+    }
+
+    /* hide the submit but leave it clickable */
+    .search-submit {
+	    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; /* IE 8 */
+        filter: alpha(opacity=0); /* IE 5-7 */
+        opacity: 0;
+	    color: transparent;
+	    border: none;
+	    outline: none;
+	    z-index: -1;
+    }
+
+    /* format the search icon */
+    .search-icon {
+	    z-index: 90;
+	    font-size: 22px;
+	    speak: none;
+	    font-style: normal;
+	    font-weight: normal;
+	    font-variant: normal;
+	    text-transform: none;
+	    -webkit-font-smoothing: antialiased;
+    }
+
+    /* Open state */
+    &.search-open {
+	    width: $widget-search-input-active-width;
+    }
+
+    &.search-open.fullWidth {
+        width: 100%;
+    }
+
+    /* add the "active" color on the search button */
+    &.search-open .search-icon {
+	    z-index: 11;
+    }
+
+    /* adjust z-index to make sure the search submit is clikacble and not below any other elements */
+    &.search-open .search-submit {
+	    z-index: 90;
+    }
+}

@@ -1,0 +1,6 @@
+UI.Client/.awcache/
+UI.Client/.vs/
+UI.Client/bin/
+UI.Client/dist/
+UI.Client/node_modules/
+UI.Client/obj/

@@ -1,0 +1,23 @@
+﻿/// <reference path="_settings.bootstrap.scss" />
+/*!
+ *  Widget search settings.
+ */
+
+$widget-search-size: 40px !default;
+$widget-search-input-active-width: 456px !default;
+
+// Input colors for search box.
+$widget-search-input-bg: $white !default;
+$widget-search-input-color: #2c3e50 !default;
+$widget-search-input-placeholder-color: #efb480 !default;
+
+// Icon colors.
+$widget-search-icon-color: $white !default;
+$widget-search-icon-bg: #e67e22 !default;
+
+// Active icon colors.
+$widget-search-icon-active-color: $white !default;
+$widget-search-icon-active-bg: #e67e22 !default;
+
+// IE needs this transperance color is not working set it to the background color of this widget.
+$widget-search-transparent-fix-bg: $white !default;

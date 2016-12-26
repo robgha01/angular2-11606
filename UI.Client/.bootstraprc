@@ -1,0 +1,6 @@
+{
+  "bootstrapVersion": 3,
+  "styleLoaders": [ "style-loader", "css-loader", "sass-loader" ],
+  "scripts": true,
+  "useCustomIconFontPath": true
+}

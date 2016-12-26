@@ -1,0 +1,42 @@
+﻿/// <reference path="_settings.widget-search.scss" />
+
+/*!
+ *  Widget search component
+ */
+
+.widget.widget-search.widget-default,
+.widget .widget-search.widget-default {
+    /* The input element on the search element  */
+    .search-input {
+        border: none;
+        outline: none;
+        color: $widget-search-input-color;
+        background: $widget-search-input-bg;
+    }
+
+    /* browser specific placholder text color */
+    .search-input::-webkit-input-placeholder,
+    .search-input:-moz-placeholder,
+    .search-input::-moz-placeholder,
+    .search-input:-ms-input-placeholder {
+        color: $widget-search-input-placeholder-color;
+    }
+
+    /* hide the submit but leave it clickable */
+    .search-submit {
+        background: $widget-search-transparent-fix-bg; /* IE needs this transperance color is not working. */
+    }
+
+    /* format the search icon */
+    .search-icon {
+        color: $widget-search-icon-color;
+        background: $widget-search-icon-bg;
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    /* add the "active" color on the search button */
+    &.search-open .search-icon {
+        color: $widget-search-icon-active-color;
+        background: $widget-search-icon-active-bg;
+    }
+}

@@ -1,0 +1,13 @@
+﻿/*!
+ *  Tools base (this should get imported before any other tool)
+ */
+
+// source: http://hugogiraudel.com/2014/05/05/bringing-configuration-objects-to-sass/
+/// Object Extend
+/// @access public
+/// @param {Base} $obj - The object to extend
+/// @param {Base} $ext-obj - A object to use with the extend
+/// @return {Base} - A $obj extended with $ext-obj
+@function extend($obj, $ext-obj) {
+  @return map-merge($obj, $ext-obj);
+}

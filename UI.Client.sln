@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI.Client", "UI.Client\UI.Client.csproj", "{6CB335B9-322E-4B22-89D1-744469023F70}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		webprod|Any CPU = webprod|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6CB335B9-322E-4B22-89D1-744469023F70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CB335B9-322E-4B22-89D1-744469023F70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CB335B9-322E-4B22-89D1-744469023F70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CB335B9-322E-4B22-89D1-744469023F70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CB335B9-322E-4B22-89D1-744469023F70}.webprod|Any CPU.ActiveCfg = webprod|Any CPU
+		{6CB335B9-322E-4B22-89D1-744469023F70}.webprod|Any CPU.Build.0 = webprod|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

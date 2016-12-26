@@ -1,0 +1,46 @@
+﻿// Settings
+// --------------------------
+@import "settings.colors";
+@import "settings.global";
+@import "settings.font-awesome";
+@import "settings.bootstrap";
+@import "settings.widget";
+@import "settings.widget-search";
+
+// Bootstrap Theme (optional-layer: A bootstraper layer for the theme layer)
+// --------------------------
+
+// Tools
+// --------------------------
+@import "tools.base";
+@import "tools.asset-helper";
+@import "tools.mixins";
+
+// Generic (Third party)
+// --------------------------
+@import "~bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "generic.font-awesome";
+@import "generic.font-face";
+
+// Base (element based styles)
+// --------------------------
+@import "base.headings";
+@import "base.links";
+
+// Objects (class based objects) skin free
+// --------------------------
+@import "objects.icon";
+@import "objects.widget";
+@import "objects.widget-search";
+
+
+// Components (ui components class based) skin here
+// --------------------------
+@import "components.widget";
+@import "components.widget-search";
+
+// Theme (optional-layer: Themed components, used for multiple sites with the same layout and components)
+// --------------------------
+
+// Wins (trumps) overrides here
+// --------------------------

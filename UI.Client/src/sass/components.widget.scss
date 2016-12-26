@@ -1,0 +1,12 @@
+﻿/// <reference path="_settings.widget.scss" />
+
+/*!
+ *  Widget component
+ */
+
+.widget.widget-default {
+
+    .widget-header {
+        color: $widget-default-header-color;
+    }
+}

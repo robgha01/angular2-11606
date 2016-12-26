@@ -1,0 +1,47 @@
+﻿/// <reference path="_settings.colors.scss" />
+/*!
+ *  Global settings.
+ */
+
+/// Base path for assets (fonts, images...),
+/// should not include trailing slash
+/// @access public
+/// @type String
+$asset-base-path: "../../src/assets" !default;
+
+/// Base size for borders
+/// @access public
+/// @type Number
+$border-base-size: 2px !default;
+
+/// Color for borders :hover
+/// @access public
+/// @type Color
+$border-base-hover-color: $silver !default;
+
+/// Background color for borders :hover
+/// @access public
+/// @type Color
+$border-base-hover-bg-color: transparent;
+
+/// Color for borders :active
+/// @access public
+/// @type Color
+$border-base-active-color: $blue !default;
+
+/// Background color for borders :active
+/// @access public
+/// @type Color
+$border-base-active-bg-color: $border-base-active-color !default;
+
+/// Header middle margin
+/// @access public
+$header-middle-margin: 40px;
+
+/// Header middle margin
+/// @access public
+$footer-middle-margin: 80px;
+
+@if $env == "production" {
+    $asset-base-path: "/static/assets"
+}

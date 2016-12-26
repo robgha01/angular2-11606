@@ -1,0 +1,27 @@
+﻿{
+  "compilerOptions": {
+    "target": "es5",
+    "sourceMap": true,
+    "noImplicitAny": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "preserveConstEnums": true,
+    "module": "commonjs",
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    "allowUnusedLabels": false,
+    "allowUnreachableCode": false
+  },
+  "compileOnSave": false,
+  "buildOnSave": false,
+  "awesomeTypescriptLoaderOptions": {
+    "forkChecker": true,
+    "useBabel": true,
+    "useCache": true,
+    "useWebpackText": true // Allows other loaders to be chained to awesome-typescript-loader.
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
